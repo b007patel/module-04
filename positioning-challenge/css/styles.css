@@ -1,0 +1,42 @@
+/*
+where needed -4px = -0.5em (i.e., due to line and
+letter spacing)
+*/
+
+.red-box{
+	height: 150px;
+	width: 150px;
+	background-color: red;
+	margin-bottom: 20px;
+}
+
+.display-set{
+	display: inline-block;
+	margin-right: 16px;
+}
+
+.float-set{
+	float: left;
+	margin-right: 20px;
+}
+
+#lposition{
+	position: absolute;
+	margin-right: 20px;
+	left: 8px;
+	top: 416px;
+}
+
+#cposition{
+	position: absolute;
+	margin-right: 20px;
+	left: 178px;
+	top: 416px;
+}
+
+#rposition{
+	position: absolute;
+	margin-right: 20px;
+	left: 348px;
+	top: 416px;
+}
