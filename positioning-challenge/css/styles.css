@@ -1,42 +1,53 @@
-/*
-where needed -4px = -0.5em (i.e., due to line and
-letter spacing)
-*/
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.row{
+	margin-bottom: 20px;
+}
 
 .red-box{
 	height: 150px;
 	width: 150px;
 	background-color: red;
-	margin-bottom: 20px;
 }
 
-.display-set{
+#display-row .red-box{
 	display: inline-block;
-	margin-right: 16px;
+	margin-right: 20px;
 }
 
-.float-set{
+#float-row .red-box{
 	float: left;
 	margin-right: 20px;
 }
 
-#lposition{
+#position-row {
+	position: relative;
+}
+
+#position-row section {
 	position: absolute;
-	margin-right: 20px;
-	left: 8px;
-	top: 416px;
+}
+
+#lposition{
+	left: 0px;
 }
 
 #cposition{
-	position: absolute;
-	margin-right: 20px;
-	left: 178px;
-	top: 416px;
+	left: 170px;
 }
 
 #rposition{
-	position: absolute;
-	margin-right: 20px;
-	left: 348px;
-	top: 416px;
+	left: 340px;
 }

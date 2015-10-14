@@ -5,17 +5,16 @@
 	</head>
 	<body>
 		<h1>3 rows - display, float, position</h1>
-		<div>
-			<section class="red-box display-set"></section>
-			<section class="red-box display-set"></section>
-			<section class="red-box display-set"></section>
+		<!-- Have no EOLs between sections. Otherwise HTML renders a tiny width for them -->
+		<div class="row clearfix" id="display-row">
+			<section class="red-box"></section><section class="red-box"></section><section class="red-box"></section>
 		</div>
-		<div>
-			<section class="red-box float-set"></section>
-			<section class="red-box float-set"></section>
-			<section class="red-box float-set"></section>
+		<div class="row clearfix" id="float-row">
+			<section class="red-box"></section>
+			<section class="red-box"></section>
+			<section class="red-box"></section>
 		</div>
-		<div>
+		<div class="row clearfix" id="position-row">
 			<section class="red-box" id="lposition"></section>
 			<section class="red-box" id="cposition"></section>
 			<section class="red-box" id="rposition"></section>
