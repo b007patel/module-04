@@ -1,0 +1,5 @@
+- display: none used with JavaScript for hiding/showing elements based on values in forms
+- float useful for newspaper articles with inline images, for example. The image for a given text element would be floated one way or the other.
+- float, like position=absolute or fixed, takes the element out of the parent's "expanding" GUI real estate (parent's document flow)
+- clear property used after a float property set to stop floating to resume document flow
+- clearfix also useful (Google "csstricks clearfix")
